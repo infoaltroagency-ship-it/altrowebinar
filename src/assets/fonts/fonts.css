@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Black.eot');
+    src: url('Ezra-Black.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Black.woff2') format('woff2'),
+        url('Ezra-Black.woff') format('woff'),
+        url('Ezra-Black.ttf') format('truetype'),
+        url('Ezra-Black.svg#Ezra-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Italic.eot');
+    src: url('Ezra-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Italic.woff2') format('woff2'),
+        url('Ezra-Italic.woff') format('woff'),
+        url('Ezra-Italic.ttf') format('truetype'),
+        url('Ezra-Italic.svg#Ezra-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-BlackItalic.eot');
+    src: url('Ezra-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-BlackItalic.woff2') format('woff2'),
+        url('Ezra-BlackItalic.woff') format('woff'),
+        url('Ezra-BlackItalic.ttf') format('truetype'),
+        url('Ezra-BlackItalic.svg#Ezra-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-BoldItalic.eot');
+    src: url('Ezra-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-BoldItalic.woff2') format('woff2'),
+        url('Ezra-BoldItalic.woff') format('woff'),
+        url('Ezra-BoldItalic.ttf') format('truetype'),
+        url('Ezra-BoldItalic.svg#Ezra-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Light.eot');
+    src: url('Ezra-Light.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Light.woff2') format('woff2'),
+        url('Ezra-Light.woff') format('woff'),
+        url('Ezra-Light.ttf') format('truetype'),
+        url('Ezra-Light.svg#Ezra-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-ExtraBoldItalic.eot');
+    src: url('Ezra-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-ExtraBoldItalic.woff2') format('woff2'),
+        url('Ezra-ExtraBoldItalic.woff') format('woff'),
+        url('Ezra-ExtraBoldItalic.ttf') format('truetype'),
+        url('Ezra-ExtraBoldItalic.svg#Ezra-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Bold.eot');
+    src: url('Ezra-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Bold.woff2') format('woff2'),
+        url('Ezra-Bold.woff') format('woff'),
+        url('Ezra-Bold.ttf') format('truetype'),
+        url('Ezra-Bold.svg#Ezra-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-ExtraBold.eot');
+    src: url('Ezra-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-ExtraBold.woff2') format('woff2'),
+        url('Ezra-ExtraBold.woff') format('woff'),
+        url('Ezra-ExtraBold.ttf') format('truetype'),
+        url('Ezra-ExtraBold.svg#Ezra-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-MediumItalic.eot');
+    src: url('Ezra-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-MediumItalic.woff2') format('woff2'),
+        url('Ezra-MediumItalic.woff') format('woff'),
+        url('Ezra-MediumItalic.ttf') format('truetype'),
+        url('Ezra-MediumItalic.svg#Ezra-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-LightItalic.eot');
+    src: url('Ezra-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-LightItalic.woff2') format('woff2'),
+        url('Ezra-LightItalic.woff') format('woff'),
+        url('Ezra-LightItalic.ttf') format('truetype'),
+        url('Ezra-LightItalic.svg#Ezra-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-SemiBold.eot');
+    src: url('Ezra-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-SemiBold.woff2') format('woff2'),
+        url('Ezra-SemiBold.woff') format('woff'),
+        url('Ezra-SemiBold.ttf') format('truetype'),
+        url('Ezra-SemiBold.svg#Ezra-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-SemiBoldItalic.eot');
+    src: url('Ezra-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-SemiBoldItalic.woff2') format('woff2'),
+        url('Ezra-SemiBoldItalic.woff') format('woff'),
+        url('Ezra-SemiBoldItalic.ttf') format('truetype'),
+        url('Ezra-SemiBoldItalic.svg#Ezra-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Regular.eot');
+    src: url('Ezra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Regular.woff2') format('woff2'),
+        url('Ezra-Regular.woff') format('woff'),
+        url('Ezra-Regular.ttf') format('truetype'),
+        url('Ezra-Regular.svg#Ezra-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ezra';
+    src: url('Ezra-Medium.eot');
+    src: url('Ezra-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Ezra-Medium.woff2') format('woff2'),
+        url('Ezra-Medium.woff') format('woff'),
+        url('Ezra-Medium.ttf') format('truetype'),
+        url('Ezra-Medium.svg#Ezra-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

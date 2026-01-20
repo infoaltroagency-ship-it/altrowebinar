@@ -1,0 +1,449 @@
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 4rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* Badge */
+.liveBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Slightly more transparent for glass */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: white;
+    /* Changed from #a1a1aa to white */
+    margin-bottom: 2rem;
+    box-shadow: 0 0 14px rgba(43, 64, 245, 0.2);
+
+    /* Sticky Glass Effect */
+    position: sticky;
+    top: 2rem;
+    /* Stick 2rem from top */
+    z-index: 50;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.pulsingDot {
+    width: 6px;
+    height: 6px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ef4444;
+}
+
+.accentDate {
+    color: white;
+    /* Changed from #60a5fa to white */
+    font-weight: 600;
+    /* Keep weight if desired, or remove if not needed */
+}
+
+/* Typography */
+.headline {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.subheadline {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #e4e4e7;
+    margin-bottom: 1.5rem;
+    /* Reduced bottom margin to fit social proof */
+    font-weight: 500;
+}
+
+.highlight {
+    color: #2B40F5;
+    font-weight: 700;
+}
+
+/* Social Proof */
+.socialProof {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.avatarGroup {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #0B0B0C;
+    background-color: #2B40F5;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.socialText {
+    font-size: 0.9rem;
+    color: #d4d4d8;
+    text-align: left;
+}
+
+/* Video Placeholder */
+.videoPlaceholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #d4d4d4;
+    border-radius: 24px;
+    margin-bottom: 3rem;
+
+    /* Thinner stroke wrapping the whole video */
+    border: 1px solid rgba(43, 64, 245, 0.3);
+
+    /* Stronger blue glow underneath */
+    box-shadow: 0 20px 50px -10px rgba(43, 64, 245, 0.5);
+    position: relative;
+    /* Ensure absolute children are relative to this */
+}
+
+.videoLogo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    /* Small size */
+    opacity: 0.2;
+    /* 20% opacity */
+    pointer-events: none;
+    /* Let clicks pass through to video controls if needed, though iframe handles them separately */
+    z-index: 10;
+}
+
+/* Form Card */
+.formCard {
+    background-color: #111112;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 0 14px rgba(43, 64, 245, 0.2);
+    position: relative;
+}
+
+.formCard::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    z-index: -1;
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+/* Benefits List */
+.benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #e4e4e7;
+    font-weight: 500;
+}
+
+.checkIcon {
+    color: #10b981;
+    /* Emerald green */
+}
+
+/* Countdown Timer */
+.timerContainer {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.timer {
+    color: #ef4444;
+    font-family: 'Ezra', monospace;
+    /* Use Ezra font */
+    font-weight: 600;
+    /* Maps to SemiBold in fonts.css */
+    font-size: 1.1rem;
+}
+
+.formTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #d4d4d8;
+}
+
+.seats {
+    font-size: 0.75rem;
+    color: #a1a1aa;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    height: 50px;
+    transition: border-color 0.2s;
+}
+
+.inputWrapper:focus-within {
+    border-color: #3b82f6;
+}
+
+.inputIcon {
+    margin-left: 1rem;
+    color: #71717a;
+    min-width: 20px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #71717a;
+}
+
+/* Phone input special styling */
+.flagIcon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.phonePrefix {
+    color: #d4d4d8;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.phonePrefix::after {
+    content: '▼';
+    font-size: 0.6em;
+    color: #71717a;
+}
+
+/* Pulse Animation for Button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    }
+
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 4px 25px rgba(37, 99, 235, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    }
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #2B40F5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    animation: pulse 2s infinite ease-in-out;
+    /* Added pulse animation */
+}
+
+.submitButton:hover {
+    background-color: #2563eb;
+}
+
+.secureText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: #71717a;
+}
+
+.lockIcon {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+/* Mobile Sticky Bar */
+.stickyBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111112;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.stickyText {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+.stickyButton {
+    background-color: #2B40F5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .heroContainer {
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 6rem;
+        max-width: 1200px;
+        padding: 2rem 6rem;
+        text-align: left;
+        align-items: end;
+        margin-top: 2rem;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        /* Take full grid height */
+    }
+
+    .rightColumn {
+        height: 100%;
+        /* Take full grid height */
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        /* Reset margin */
+    }
+
+    /* Video aligns to bottom */
+    .videoPlaceholder {
+        margin-top: auto;
+    }
+
+
+    .headline {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    .subheadline {
+        font-size: 1.25rem;
+        max-width: 90%;
+    }
+
+    .videoPlaceholder {
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-bottom: 0;
+        /* margin-top: 2rem; REMOVED to allow auto */
+    }
+
+    .formCard {
+        width: 100%;
+        max-width: 450px;
+        margin-left: auto;
+        padding: 3rem;
+    }
+
+    .stickyBar {
+        display: none;
+        /* Hide on desktop */
+    }
+}

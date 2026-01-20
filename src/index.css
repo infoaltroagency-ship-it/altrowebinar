@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import './assets/fonts/fonts.css';
+
+:root {
+  --color-bg: #0B0B0C;
+  --color-text: #FFFFFF;
+  --color-text-muted: #9CA3AF;
+  --color-primary: #2B40F5;
+  /* Adjust based on exact blue from design */
+  --color-primary-hover: #2030c0;
+  --color-surface: #1C1C1E;
+  /* Card background */
+
+  --font-sans: 'Ezra', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

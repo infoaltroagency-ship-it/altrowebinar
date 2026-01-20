@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    /* Enhance logo brightness if needed */
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.logo svg {
+    height: 100%;
+    width: auto;
+    fill: white;
+}
+
+.menuButton {
+    background-color: #2B40F5;
+    /* Approximately the blue in the screenshot */
+    border: none;
+    border-radius: 6px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.menuButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.menuIcon {
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .header {
+        padding: 2rem 4rem;
+        /* Increased padding for desktop */
+        max-width: 1280px;
+        /* Allow slightly more width on large screens if desired, or stick to 1200 */
+    }
+}
